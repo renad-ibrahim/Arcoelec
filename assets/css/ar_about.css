@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&family=DM+Sans:wght@500&family=Josefin+Sans&family=Kanit:wght@600&family=Martian+Mono:wght@600&family=Mukta:wght@600&family=Nerko+One&family=Trispace:wght@600&display=swap);
+#about-main,.layer{
+    height:50vh;
+}
+.aboutacr-desc,.desc{
+    position:relative;
+}
+body{
+    font-family:Cairo,sans-serif;
+}
+p{
+    color:#010c85;
+    line-height:2.5;
+}
+#aboutArc h3,#story h3{
+    color:#1f3890;
+    font-size:36px;
+}
+#about-main{
+    background-image:url('../images/bg-aboutjpg.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+}
+.main-title{
+    transform:translateY(100%);
+    margin-top: -55px;
+}
+#story h3,.main-title h1{
+    margin-bottom:40px;
+}
+.breadcrumb li{
+    font-size:20px;
+}
+.breadcrumb li:last-of-type{
+    color:#ee6c4d;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    float:right;
+    color:#fff;
+    padding-left:10px;
+}
+#aboutArc h3 span{
+    box-shadow:5px 0 0 #ee6c4d;
+    padding-right:5px;
+}
+#vissionAndMession{
+    margin-top:80px;
+    padding-bottom:80px;
+}
+#vissionAndMession h3{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#010c85;
+    background-color:#ddd;
+    width:180px;
+    height:80px;
+    border-radius:10px;
+    position:absolute;
+    top:-35px;
+}
+.bg-main{
+    background-color:#010c85;
+    background-image:url('../images/services/services-bg.png');
+}
+.aboutacr-desc{
+    background-color:#fff;
+    border-radius:10px;
+    padding:70px 25px 20px;
+}
+.mission{
+    margin-top:70px;
+}
+#story h3 span{
+    box-shadow:0 5px 0 #ee6c4d;
+}
+.real-story{
+    box-shadow:0 0 10px #ddd;
+    border-radius:10px;
+    padding:25px 45px;
+    font-size:18px;
+}
+.real-story p i{
+    font-size:25px;
+    padding-left:10px;
+    color:#ee6c4d;
+}
+@media screen and (min-width:400px) and (max-width:992px){
+        .main-title h1{
+            text-align:center;
+        }
+        #story>div{
+            padding:0;
+        }
+        .real-story{
+            padding:25px 20px;
+        }
+}

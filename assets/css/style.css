@@ -1,0 +1,555 @@
+
+:root {
+    --animate-delay: 2s;
+  }
+  /* * * * * **Public classes * * * ** */
+  a{
+    text-decoration: none;
+  }
+  .section-title{
+    position: relative;
+  }
+  .section-title h3 ,
+  .areas,
+  #partners h3,
+  .about-title h3,
+  #business h3,
+  #end p{
+    color: #1f3890;
+  }
+  .py-10
+  {
+    padding-top: 100px;
+  }
+  .clear{
+    clear: both;
+  }
+  .right {
+    animation: Right 3s linear infinite;
+    position: relative;
+  }
+  
+  @keyframes Right {
+    0% {
+      right: 0;
+    }
+    50% {
+      right: 40px;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  .left {
+    animation: Left 3s linear infinite;
+    position: relative;
+  }
+  
+  @keyframes Left {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 40px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  /* * * *** * Scroll Up button **** ** * * */
+  #button {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+      background-color: #1f3890;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      display: inline-block;
+      text-align: center;
+      transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 8;
+   }
+   #button i {
+     font-size: 25px;
+     line-height: 52px;
+     color: #fff;
+     transform: rotate(180deg);
+   }
+   #button:hover {
+     cursor: pointer;
+     background-color: #ee6c4d;
+   }
+   #button.show {
+     opacity: 1;
+     visibility: visible;
+   }
+   /* ** **    ** ** */
+   .container-fluid{
+      padding: 0px 50px ;
+   }
+   header{
+     background-color: #fff;
+     position: fixed;
+     right: 0;
+     left: 0px;
+     z-index: 9;
+   }
+   #main{
+     height: 100vh;
+     background-image: url('../images/main.jpg');
+     background-position: top center;
+     background-size: cover;
+     background-attachment: fixed;
+   }
+   .layer{
+     background-color: #010d5873;
+     height: 100vh;
+     width: 100%;
+     position: absolute;
+   }
+   .main-title{
+     position: relative;
+     z-index: 2;
+   }
+   .main-title h1{
+     font-size: 80px;
+     font-weight: 600;
+     padding-bottom: 15px;
+   }
+   .main-title p{
+     font-size: 40px;
+     margin-bottom: 0;
+   }
+   .more{
+     position: relative;
+      top: 30px;
+      background-color: #ee6c4d;
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+   }
+   .more i{
+     width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 0;
+      left: 26px;
+      font-size: 25px;
+      color: #fff;
+      border-radius: 50%;
+     animation: upButton 2s infinite alternate;
+   }
+   @keyframes upButton {
+     0%{top: 0;}
+  
+     50%{top: 30px;}
+  
+     100%{top: 0px;}
+  }
+   /* * * * * * * * * get Our Services * * * **  ** *  */
+   #getServices{
+     background-color: #010c58;
+     color: #fff;
+   }
+   #getServices .btn a{
+     border: 1px solid #fff;
+     border-radius: 10px;
+     padding: 10px 25px;
+     color: #fff;
+     transition: background-color 2s ease-out 50ms;
+   }
+   #getServices .btn a:hover{
+     background-color: #fff;
+     color: #1f3890;
+     font-weight: 600;
+   }
+   /* * * * * * About Section * * * * * */
+   #about{
+    padding-bottom: 80px;
+   }
+   #about h3 span{
+    box-shadow: 5px 0px 0px #ee6c4d;
+    padding-right: 5px;
+   }
+   .about-iamges img{
+     width: 100%;
+   }
+   .about-img1{
+     position: relative;
+   }
+  .about-img2{
+     position: absolute;
+     right: -30%;
+      top: 55%;
+  }
+  .about-left-side{
+     float: left;
+  }
+  .about-content p:first-of-type{
+     font-size: 25px;
+     color: #010c58;
+  }
+  .about-content p:last-of-type{
+     color: #52555c;
+     line-height: 2.3;
+     font-size: 16px;
+  }
+  .about-content ul li i{
+     font-size: 20px;
+     color: #ee6c4d;
+     padding-left: 10px;
+  }
+  .about-content ul li a{
+     font-size: 16px;
+     font-weight: 600;
+     color: #010c58;
+  }
+  .about-more a{
+     background-color: #ee6c4d;
+     color: #fff;
+     padding: 10px 25px;
+     border-radius: 10px;
+     transition: background-color 2s ease-out 50ms;
+  }
+  .about-more a:hover{
+    background-color: #fff;
+    border: 1px solid #ee6c4d;
+    color: #ee6c4d;
+    font-weight: 600;
+  }
+   /* ** ** * ** * ** services section * * * * * * ** ***/
+   #services{
+    background-image: url('../images/services/services-bg.png');
+    background-color: #010c58;
+    padding-bottom: 50px;
+   }
+   #services h3 span{
+    box-shadow: 0px 4px 0px #fff;
+   }
+   .service{
+    position: relative;
+    margin-bottom: 80px;
+    transition: background-color 2s ease-out 20ms;
+   }
+   .service:hover .service-desc{
+    background-color: #fff;
+    color: #010c58;
+    cursor: pointer;
+   }
+   .service:hover .service-icon{
+    background-color: #010c58;
+   }
+   .service-icon{
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: #020835;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 2s ease-out 20ms;
+   }
+  .service-desc{
+    position: relative;
+    background-color: #020835;
+    color: #fff;
+    text-align: center;
+    padding: 80px 30px 20px;
+    border-radius: 10px;
+    height: 310px;
+    transition: background-color 2s ease-out 20ms;
+   }
+   .services-title{
+    color: #fff;
+    margin-bottom: 70px;
+  
+   }
+   /* * * * * * *partners * * * * ** */
+   #partners{
+    padding-bottom: 50px;
+   }
+   #partners h3 span{
+    box-shadow: 5px 0px 0px #ee6c4d;
+    padding-right: 5px;
+   }
+   .partners{
+    border: 1px solid #ddd;
+    padding: 0;
+   }
+   #partners .row{
+    align-items: center;
+   }
+   #partners .row p{
+    line-height: 2;
+    font-size: 18px;
+    color: #020835;
+   }
+   /* * * ** * ** * *لBUSINESS * * ** * *  * * */
+   #business {
+    padding-bottom: 80px;
+   }
+   #business span{
+      box-shadow: 0px 5px 0px #ee6c4d;
+      padding-right: 5px;
+   }
+   .business-title{
+    margin-bottom: 50px;
+   }
+   .business-content{
+   background-position: center center;
+   background-repeat: no-repeat;
+   border-radius: 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 200px;
+   position: relative;
+   box-shadow: 3px 6px 10px #020835;
+   }
+   .bg1{
+    background-image: url('../images/business/digitization-.jpg');
+   }
+   .bg2{
+    background-image: url('../images/business/DB.jpg');
+   }
+   .bg3{
+    background-image: url('../images/business/SA.jpg');
+   }
+   .bg4{
+    background-image: url('../images/business/code.jpg');
+   }
+   .bg5{
+    background-image: url('../images/business/consulting.jpg');
+   }
+   .bg6{
+    background-image: url('../images/business/TRAINING.jpg');
+   }
+   .business-desc{
+    width: 70%;
+    height: auto;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 2px 0px 0px #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    position: absolute;
+    z-index: 2;
+   }
+   .business-desc p{
+    margin-bottom: 0px;
+    color: #020835;
+   }
+   .business-layer{
+    border-radius: 15px;
+    background-color: #010d588f;
+    width: 100%;
+    height: 100%;
+   }
+   /* * * * * * * Why Arcoelec* ** ** * * * */
+   #why-us{
+    margin: 80px 0px 100px 0px;
+    padding-bottom: 100px;
+    background: url('../images/why-us/bg-why.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* background-color: #ddd; */
+  }
+  #why-us h3{
+    color: #fff;
+  }
+  #why-us h3 span{
+    box-shadow: 0px 5px 0px #ee6c4d;
+    padding-bottom: 5px;
+  }
+  .reasons-why-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .why1{
+      background-color: #fff;
+      margin: auto;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0px 15px;
+      color: #020835;
+      position: relative;
+      z-index: 2;
+      border-radius: 15px;
+  }
+  .why1-title .num , .sidenum{
+    color: #ee6c4d;
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .why1-title p:last-of-type{
+    color: #020835;
+    font-size: 23px;
+    margin-bottom: 0px;
+  }
+  .why1-title i{
+    font-size: 40px;
+    color: #52525c;
+    padding-bottom: 15px;
+  }
+  /* * * * * * * * contact * * * * * * * * */
+  #contact{
+    background-image: url('../images/contact-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #contact .container{
+    padding-bottom: 100px;
+  }
+  #contact .input{
+    margin-bottom: 40px;
+  }
+  #contact .input:focus{
+    border: #ee6c4d;
+  }
+  .radio{
+    width: 20px;
+    height: 20px;
+  }
+  #contact h3 span{
+    box-shadow: 0px 5px 0px #fff;
+  }
+  #contact label{
+    color: #fff;
+    font-size: 20px;
+  }
+  textarea{
+    width: 100%;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  textarea:focus{
+    border: #ee6c4d;
+  }
+  #contact #btn{
+    background-color: #fff;
+    border-radius: 15px;
+    color: #010c58;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  #contact #btn:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  .gmap_canvas iframe{
+    width: 500px;
+    height: 500px;
+  }
+   /* * * ** * footer * * * * * * * */
+   footer{
+    background-image: url('../images/footer-bg.png');
+    font-weight: 500;
+    padding-bottom: 20px;
+    font-size: 18px;
+   }
+   footer img{
+    width: 45%;
+   }
+   footer h5{
+    color: #1f3890;
+   }
+   .contact-ways{
+  direction: ltr;
+  margin-left: 50px;
+  }
+   footer a ,footer p{
+      color: #010c58;
+      transition: 1s;
+   }
+   footer i{
+    color: #ee6c4d;
+    padding-right: 8px;
+   }
+  
+  .social-media li:hover{
+    background-color: #ee6c4d;
+   }
+   .social-media li{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #010c58;
+    margin-left: 10px;
+    text-align: center;
+    transition: 1s;
+   }
+   .social-media i{
+    color: #fff;
+    line-height: 2.5;
+      text-align: center;
+      padding-right: 0px;
+      font-size: 20px;
+   }
+   .links a:hover ,
+   .contact-ways p a:hover{
+    box-shadow: 0px 3px 1px #ee6c4d;
+    color: #010c58;
+   }
+   /* * * * * * * END * * ** * * **  */
+   #end{
+    border-top: 1px solid #ddd;
+   }
+   /* * ** * * * ** * * * * *Media Query * *  * * * * ** * **  * */
+   @media screen and (min-width:993px) and (max-width:1999px){
+    .business-desc{
+      width: 80%;
+    }
+   }
+  @media screen and (max-width:992px){
+    .main-title p {
+      font-size: 20px;
+  }
+    #why-us{
+      padding-bottom: 50px;
+    }
+    #why-us .container{
+      width: 100%;
+    }
+    .reasons-why{
+      padding: 50px 20px;
+    }
+    #partners .row >div {
+      margin-bottom: 40px;
+    }
+    .business-content{
+      height: 100px;
+    }
+    #end p{
+      font-size: 13px;
+    }
+    
+  }
+  @media screen and  (min-width: 250px){
+  .container {
+      width: 95%;
+  }
+  #getServices .btn{
+    line-height: 4;
+  }
+  .service-desc{
+    padding: 80px 15px 20px;
+  }
+  }

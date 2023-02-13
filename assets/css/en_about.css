@@ -1,0 +1,25 @@
+.breadcrumb-item + .breadcrumb-item::before {
+    float: left;
+}
+nav {
+    direction: ltr;
+}
+h3 {
+    font-weight: 600;
+}
+.main-title{
+    margin-top: -55px;
+}
+#aboutArc h3 span {
+    box-shadow: -5px 0 0 #ee6c4d;
+    padding-left: 5px;
+}
+#aboutArc p:first-of-type {
+    font-size: 25px;
+    font-weight: 600;
+}
+@media screen and (min-width: 400px) and (max-width: 1199px) {
+    #aboutArc p:first-of-type {
+        font-size: 18px;
+    }
+}

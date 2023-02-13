@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&family=DM+Sans:wght@500&family=Josefin+Sans&family=Kanit:wght@600&family=Martian+Mono:wght@600&family=Mukta:wght@600&family=Nerko+One&family=Trispace:wght@600&display=swap');
+body{
+    font-family: 'Cairo', sans-serif;
+}
+.row{
+    direction: rtl;
+}
+/* ** ** Header Section ** ** */
+header{
+    box-shadow: 0px 0px 8px #dfdfe2;
+}
+h2,
+nav{
+    direction: rtl;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+}
+h2{
+    width: 10%;
+}
+.logo img{
+    width: 100%;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+.social{
+    width: 10%;
+}
+.menu,
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.menu li{
+    padding: 0px 25px;
+}
+.menu li a ,
+.social  a {
+    text-decoration: none;
+    color: #010c58;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.4s;
+    position: relative;
+}
+.menu li a:hover{
+    box-shadow: 0px -6px 0px #ee6c4d;
+    padding-top: 5px ;
+}
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+.lang-active{
+    color: #ee6c4d;
+}
+.toggle a i {
+    color: #ee6c4d;
+}
+/* * * * * * * * * * *Media Query * * ** * * * * * * *  * */
+@media screen and (max-width : 767px) and (min-width: 250px){
+    #getServices .btn{
+        margin-top: 15px;
+    }
+    .social-media{
+        justify-content: center;
+    }
+    .links{
+        display: flex;
+        justify-content: center;
+    }
+    .links p{
+        padding-left: 15px;
+    }
+    footer{
+        text-align: center;
+    }
+    .contact-ways{
+        margin-left: 0px;
+    }
+    footer img{
+        width: 50%;
+    }
+    .service-desc{
+        height: 350px;
+    }
+    .gmap_canvas iframe{
+        width: 300px;
+        height: 300px;
+      }
+}
+@media screen and (max-width: 992px){
+    .container-fluid{
+        padding: 0px;
+    }
+    .social{
+        display: none;
+    }
+    .menu{
+        margin-top: 15px;
+        display: none;
+        background-color: #010c58;
+        position: absolute;
+        z-index: 5;
+        left: 0px;
+        top: -15px;
+        width: 50%;
+        height: 100vh;
+        padding: 60px 0px;
+    }
+    .menu li{
+        padding: 30px 25px;
+    }
+    .menu li a:hover{
+        box-shadow: 5px 0px 0px #ee6c4d;
+        padding-right: 19px ;
+    }
+    h2{
+        width: 25%;
+    }
+    .main-title h1 {
+        font-size: 60px;
+    }
+    .close{
+        position: absolute;
+        color: #fff;
+        z-index: 6;
+        left: 5px;
+        top: 15px;
+    }
+    .menu li a{
+        color: #fff;
+    }
+    .menu.active , .toggle{
+        display: block;
+    }
+    .toggle{
+        position: absolute;
+        left: 10px;
+    }
+    #getServices{
+        text-align: center;
+    }
+    .about-img2{
+        position: absolute;
+        right: 10%;
+        width: 80%;
+    }
+    
+    .about-img1{
+        text-align: center;
+    }
+    .about-content ul li a{
+        font-size: 16px;
+     }
+     .about-content p:first-of-type{
+        font-size: 18px;
+        font-weight: 600;
+     }
+     .about-content p:last-of-type{
+        line-height: 2;
+        font-size: 15px;
+     }
+     .about-img1 img{
+        width: 100%;
+     }
+    .py-10{
+        padding-top: 70px;
+    }
+    #about{
+        padding-bottom: 30px;
+    }
+    footer{
+        font-size: 16px;
+        text-align: center;
+    }
+    footer img {
+        width: 70%;
+    }
+    .contact-ways{
+        margin: 0px;
+    }
+    .social-media{
+        padding-right: 0px;
+    }
+    .social-media li {
+        width: 40px;
+        height: 40px;
+        margin-left: 1px;
+        line-height: 2;
+    }
+    .social-media i{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width:1344px ){
+    .menu{
+        padding-right: 0px;
+    }
+    .menu li {
+        padding: 0px 12px;
+    }
+    .menu li a,
+    .social a{
+        font-size: 16px;
+    }
+    .about-img2 {
+        position: absolute;
+        right: -17%;
+        top: 55%;
+    }
+    footer img{
+        width: 80%;
+    }
+    .social-media li {
+        margin-left: 5px;
+        line-height: 3;
+    }
+    .gmap_canvas iframe{
+        width: 450px;
+        height: 450px;
+      }
+
+}
+
